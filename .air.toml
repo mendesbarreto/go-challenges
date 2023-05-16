@@ -5,11 +5,12 @@ tmp_dir = "tmp"
 [build]
 args_bin = []
 bin = "./tmp/main"
-cmd = "go build -gcflags='all=-N -l' -o ./tmp/main ./cmd/main.go"
+#cmd = "go build -gcflags='all=-N -l' -o ./tmp/main ./cmd/main.go"
+cmd = "go test -v ./..."
 delay = 1000
 exclude_dir = ["assets", "tmp", "vendor", "testdata"]
 exclude_file = []
-exclude_regex = ["_test.go"]
+exclude_regex = []
 exclude_unchanged = false
 follow_symlink = false
 full_bin = ""
@@ -34,4 +35,4 @@ time = false
 clean_on_exit = false
 
 [screen]
-clear_on_rebuild = false
+clear_on_rebuild = true
