@@ -7,6 +7,8 @@ import (
 	"testing"
 )
 
+// TODO: I need to make the input file and output file be automatically loaded for my tests, that will save me a lot of time
+
 func TestPrintResul(t *testing.T) {
 	t.Run("PrintFavouriteSingerCountResult", func(t *testing.T) {
 
